@@ -1,0 +1,21 @@
+controller ??
+
+java file -class 
+
+
+controller --> servlet
+
+class --> http 
+
+thread --> 
+
+class A extends Thread{
+	public void run(){
+	
+	}
+}
+//servlet-api.jar 
+class SignupServlet extends HttpServet{
+
+	//service 
+}

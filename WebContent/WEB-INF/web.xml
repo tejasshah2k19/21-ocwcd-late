@@ -8,8 +8,8 @@
 		<welcome-file>login.html</welcome-file>
 		<welcome-file>home.html</welcome-file>
 	</welcome-file-list>
-	
-	
+
+
 	<servlet>
 		<servlet-name>SignupServlet</servlet-name>
 		<servlet-class>com.controller.SignupServlet</servlet-class>
@@ -19,5 +19,36 @@
 		<servlet-name>SignupServlet</servlet-name>
 		<url-pattern>/signup</url-pattern>
 	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>com.controller.AddServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/AddServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </web-app>

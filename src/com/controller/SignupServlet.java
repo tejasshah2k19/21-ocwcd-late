@@ -14,7 +14,7 @@ public class SignupServlet extends HttpServlet {
 
 		System.out.println("signup servlet called.....");
 		// all parameters value are string by default and we can not modify it
-		String firstName = request.getParameter("firstName");
+		String firstName = request.getParameter("firstName");//String
 		String email = request.getParameter("email");
 		String password = request.getParameter("pwd");
 

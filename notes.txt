@@ -21,3 +21,25 @@ class SignupServlet extends HttpServet{
 
 	//service 
 }
+------------------------
+jsp ==>  java server pages , java servlet page
+
+	HTML + JAVA
+	by default ==> html 
+	
+	java :-  
+	 1)  java code 
+	 		scriptlet => <%  %> 
+	 2)  java - print 
+	 		expression =>  <%=  %>
+	
+	
+
+
+
+
+
+
+
+
+

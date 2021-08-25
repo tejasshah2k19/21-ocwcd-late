@@ -71,8 +71,16 @@
 
 
 
+	<servlet>
+		<servlet-name>CalculateSalaryServlet</servlet-name>
+		<servlet-class>com.controller.CalculateSalaryServlet</servlet-class>
+	</servlet>
 
 
+	<servlet-mapping>
+		<servlet-name>CalculateSalaryServlet</servlet-name>
+		<url-pattern>/CalculateSalaryServlet</url-pattern>
+	</servlet-mapping>
 
 
 

@@ -16,9 +16,11 @@
 
 
 	<form action="CalculateSalaryServlet">
-		Username : <input type="text" name="userName" value="<%=userNameValue==null?"":userNameValue %>" />
+		Username : <input type="text" name="userName"
+			value="<%=userNameValue == null ? "" : userNameValue%>" />
 		<%=userError == null ? "" : userError%>
-		<br> BasicSalary: <input type="text" name="bs" value="<%=bsValue==null?"":bsValue %>" />
+		<br> BasicSalary: <input type="text" name="bs"
+			value="<%=bsValue == null ? "" : bsValue%>" />
 		<%=bsError == null ? "" : bsError%>
 		<br> <input type="submit" value="CalculateSalary" />
 	</form>

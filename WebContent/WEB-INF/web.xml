@@ -84,7 +84,16 @@
 
 
 
-
+<!-- 	<servlet>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<servlet-class>com.controller.ServletLifeCycle</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletLifeCycle</servlet-name>
+		<url-pattern>/ServletLifeCycle</url-pattern>
+	</servlet-mapping>
+ -->
 
 
 

@@ -34,6 +34,30 @@ jsp ==>  java server pages , java servlet page
 	 		expression =>  <%=  %>
 	
 	
+--------------------------------
+Connection*
+
+dmlCompiler --> syntax 
+queryParser --> parse --> 
+optimiser --> search 
+
+Statement*--> insert into users (); -->
+PreparedStatement*
+CallableStatement-->plsql
+--------------------------------------------
+
+mysql -u root -p
+ 
+create database  21advjava;
+use 21advjava;
+
+create table student (
+	studentId integer primary key auto_increment,
+	firstName varchar(20),
+	email varchar(20),
+	password varchar(20)
+);
+------------------------------------------
 
 
 

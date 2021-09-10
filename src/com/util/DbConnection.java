@@ -10,9 +10,10 @@ public class DbConnection {
 		String url = "jdbc:mysql://localhost:3306/21advjava";
 		String userName = "root";
 		String password = "root";
+
 		Connection con = null;
 		try {
-			Class.forName(driver);// load driver into memory
+			Class.forName(driver);// load driver into memory --- type1 type2 type3 type4*
 			con = DriverManager.getConnection(url, userName, password);
 			if (con != null) {
 				System.out.println("database connected.....");

@@ -13,6 +13,8 @@
 
 	<input type="submit" value="AddStudent">
 	</form>
-
+	<br>
+	<a href="ListStudentServlet">List All Students</a>
 </body>
+
 </html>

@@ -57,8 +57,34 @@ create table student (
 	email varchar(20),
 	password varchar(20)
 );
-------------------------------------------
+--------------------------------------------------------------------
 
+__jdbc________ api we need to use if we want to perform sql queries using java? 
+
+
+___driver__________  required in jdbc to communicate with database?
+
+mysql -> mysql-connector.jar 
+
+
+__url_____ ,___username_____ and ____password_______ attribute/property we need to set when we open connection using jdbc api?
+
+___Connection_________ interface is used to hold connection object in java? 
+
+
+_____PrepareStatement___________ interface help us to execute any sql query in database? 
+
+
+____executeUpdate()_______ method is used to execulte any DML statement using preparestatement instance?
+
+what is the return type of executeUpdate? ___int_____
+
+
+__executeQuery()____________ method is used to execute any ready only query ?
+
+what is the return type of executeQuery()? ___ResultSet________
+
+--------------------------------------------------------------------
 
 
 

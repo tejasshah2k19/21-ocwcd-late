@@ -21,6 +21,7 @@
 				<th>FirstName</th>
 				<th>Email</th>
 				<th>Password</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -36,6 +37,9 @@
 				<td><%=firstName%></td>
 				<td><%=email%></td>
 				<td><%=password%></td>
+				<td><a href="DeleteStudentServlet?studentId=<%=studentId%>">Delete</a> | 
+					<a href="ViewStudentServlet?studentId=<%=studentId%>">View</a>
+				</td>
 			</tr>
 			<%
 				}

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.dao.StudentDao;
 import com.util.DbConnection;
 
 @WebServlet("/AddStudentServlet")
@@ -23,27 +24,14 @@ public class AddStudentServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		int i = 0;
-		// insert logic
-		try {
-			Connection con = DbConnection.getConnection();
-			PreparedStatement pstmt = con
-					.prepareStatement("insert into student (firstName,email,password) values (?,?,?)");
-			pstmt.setString(1, firstName);
-			pstmt.setString(2, email);
-			pstmt.setString(3, password);
-			i = pstmt.executeUpdate();// record insert
-			// executeUpdate -- insert update delete
-			// executeQuery -- select
 
-		} catch (Exception e) {
+		StudentDao studentDao = new StudentDao();
+		i = studentDao.insertStudent(firstName, email, password);
 
-		}
 		RequestDispatcher rd = null;
 		if (i == 1) {
 			rd = request.getRequestDispatcher("success.jsp");
-			// success
 		} else {
-			// fail
 			rd = request.getRequestDispatcher("fail.jsp");
 		}
 		rd.forward(request, response);

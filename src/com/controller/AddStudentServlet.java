@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.bean.StudentBean;
 import com.dao.StudentDao;
 import com.util.DbConnection;
 
@@ -23,10 +24,16 @@ public class AddStudentServlet extends HttpServlet {
 		String firstName = request.getParameter("firstName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+
+		StudentBean studentBean = new StudentBean();
+		studentBean.setFirstName(firstName);
+		studentBean.setEmail(email);
+		studentBean.setPassword(password);
+
 		int i = 0;
 
 		StudentDao studentDao = new StudentDao();
-		i = studentDao.insertStudent(firstName, email, password);
+		i = studentDao.insertStudent(studentBean);
 
 		RequestDispatcher rd = null;
 		if (i == 1) {

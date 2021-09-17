@@ -85,6 +85,8 @@ __executeQuery()____________ method is used to execute any ready only query ?
 what is the return type of executeQuery()? ___ResultSet________
 
 --------------------------------------------------------------------
+bean => container =>  hold ==> getters setters  => table 
+--------------------------------------------------------------------
 
 
 

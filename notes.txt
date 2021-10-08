@@ -92,6 +92,158 @@ bean => container =>  hold ==> getters setters  => table
 
 
 
+what is http ? 
+
+
+what is servlet?
+
+which method we need to override for servlet? 
+
+
+____ and _____ are the argument of service method?
+HttpServletRequest 
+HttpServletResponse 
+
+
+______________ interface is used to navigate from one node to another node.
+RequestDispatcher 
+
+
+__________ method is used to create PrintWriter instance for response in j2ee?
+response.getWriter() 
+getWriter() 
+
+
+__jdbc________ api is used to communicate with sql database in java ? 
+
+___________ method  is used to extract user input on server side ? 
+getParameter()
+
+
+_________ method is used to set data in request scope?
+setAttribute() 
+
+
+___bean_______ is POJO class who contains private/protected variable ?
+plain old java object 
+
+
+___client_______ and ____server______ are main entity in any j2ee application ?
+
+____method____ attribute is used to change http request type in form ?
+
+
+
+____GenericServlet class_______ is the parent of HttpServlet clasS? 
+
+______servlet interface________ is parent of GenericSerlvet class ? 
+
+____Servlet and IO____ exceptions are thrown by service method ?
+
+
+__expression___ is used to print data on jsp ? 
+<%= %> 
+
+-----------------------------------------------------
+
+
+FILTER 
+
+
+filter --> 
+
+
+
+request ---->   filter | server [ pre process ] 
+
+
+Singup.jps --> firstname email* password* -> submit --> request --> server  | process -> validation -> input
+
+100 users --> 50 user data miss ---> 50  
+
+-------------------------
+
+icici --> Login.jsp -->  email|password  -->  filter | server  [ block -- pakistan ] 
+
+
+-------------------------
+whatsapp --> image ---> 35mb -->   
+user1 --> 35mb image --> image -> compress --> 5 mb | whatsapp server --> user2 --->5mb ???
+
+-------------------------
+user1--> hi --->  filter | server | --> user2   
+  
+  
+implementing filter 
+
+1 class -> implements Filter [ filter interface ] 
+2 override --> init doFilter[logic] destroy 
+3 map your filter for servlet--server   
+  
+  
+-->   
+	InputMarks.jsp
+				Maths
+				Sci
+				Eng 
+						[  submit ] 
+			
+			filter 
+						
+server -->	CalculateResultServlet 
+							
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

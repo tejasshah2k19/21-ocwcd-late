@@ -84,19 +84,18 @@
 
 
 
-<!-- 	<servlet>
-		<servlet-name>ServletLifeCycle</servlet-name>
-		<servlet-class>com.controller.ServletLifeCycle</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>ServletLifeCycle</servlet-name>
-		<url-pattern>/ServletLifeCycle</url-pattern>
-	</servlet-mapping>
- -->
+	<!-- <servlet> <servlet-name>ServletLifeCycle</servlet-name> <servlet-class>com.controller.ServletLifeCycle</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>ServletLifeCycle</servlet-name> 
+		<url-pattern>/ServletLifeCycle</url-pattern> </servlet-mapping> -->
 
-
-
+	<filter>
+		<filter-name>CalculateResultFilter</filter-name>
+		<filter-class>com.filter.CalculateResultFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CalculateResultFilter</filter-name>
+		<url-pattern>/CalculateResultServlet</url-pattern>
+	</filter-mapping>
 
 
 

@@ -8,10 +8,10 @@
 <body>
 
 	<form action="CalculateResultServlet">
-		Maths: <input type="text" name="maths" /> <br> Sci: <input
-			type="text" name="sci" /> <br> Eng: <input type="text"
-			name="eng" /> <br> <br> <input type="Submit"
-			value="Generate Result" />
+		Maths: <input type="text" name="maths" /> ${mathsError } <br>
+		Sci: <input type="text" name="sci" /> ${sciError }<br> Eng: <input
+			type="text" name="eng" />${engError } <br> <br> <input
+			type="Submit" value="Generate Result" />
 
 
 	</form>

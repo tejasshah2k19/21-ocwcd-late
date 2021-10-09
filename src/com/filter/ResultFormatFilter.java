@@ -10,46 +10,52 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-public class CalculateResultFilter implements Filter {
+public class ResultFormatFilter implements Filter {
+
 	public void init(FilterConfig arg0) throws ServletException {
-		System.out.println("calculate result filter init");
+		System.out.println("init from format filter");
 	}
 
-	// 1 --> init -->start server
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("calculate result filter doFilter");
-		// input ?
+		System.out.println("inside format filter");
 		String maths = request.getParameter("maths");
 		String sci = request.getParameter("sci");
 		String eng = request.getParameter("eng");
-
 		boolean isError = false;
 
-		if (maths == null || maths.trim().length() == 0) {
-			request.setAttribute("mathsError", "Please Enter Marks for Maths");
-			isError = true;
-		}
-		if (sci == null || sci.trim().length() == 0) {
-			request.setAttribute("sciError", "Please Enter Marks For Science");
-			isError = true;
-		}
-
-		if (eng == null || eng.trim().length() == 0) {
-			request.setAttribute("engError", "Please Enter Marks for English");
+		try {
+			Integer.parseInt(maths); // "25" "tejas"
+		} catch (Exception e) {
+			request.setAttribute("mathsError", "Invalid Maths Marks");
 			isError = true;
 		}
 
-		if (isError) {
-			// back --> InputMarks.jsp
+		try {
+			Integer.parseInt(sci); // "25" "tejas"
+		} catch (Exception e) {
+			request.setAttribute("sciError", "Invalid Sci Marks");
+			isError = true;
+		}
+
+		try {
+			Integer.parseInt(eng); // "25" "tejas"
+		} catch (Exception e) {
+			request.setAttribute("engError", "Invalid English Marks");
+			isError = true;
+		}
+
+		if (isError == true) {
 			RequestDispatcher rd = request.getRequestDispatcher("InputMarks.jsp");
 			rd.forward(request, response);
+
 		} else {
-			chain.doFilter(request, response);// go ahead --> call servlet
+			chain.doFilter(request, response);
 		}
 	}
 
 	public void destroy() {
-		System.out.println("calculate result filter destory");
+
 	}
+
 }

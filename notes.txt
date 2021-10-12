@@ -192,6 +192,44 @@ implementing filter
 						
 server -->	CalculateResultServlet 
 							
+-------------------Filter invocation ----------------
+<filter-name>FilterA</filter-name>
+<servlet-name>RedServlet</servlet-name>
+
+<filter-name>FilterB</filter-name>
+<servlet-name>RedServlet</servlet-name>
+
+<filter-name>FilterC</filter-name>
+<url-pattern>/red/*</url-pattern>
+
+<filter-name>FilterD</filter-name>
+<url-pattern>/red/red/*</url-pattern>
+
+<filter-name>FilterE</filter-name>
+<url-pattern>*.red</url-pattern>
+
+
+<servlet-name>RedServlet</servlet-name>
+<url-pattern>/red/red/red/*</url-pattern>
+
+<servlet-name>RedServlet</servlet-name>
+<url-pattern>*.red</url-pattern>
+
+
+aaa.red  => RedServlet [ E A B     ]  
+red/aaa.red =>         [ C E A B   ] 
+red/red/aaa.red =>     [ C D E A B ]   
+red/red/red/  =>       [ C D A B ] 
+red/red/red/aaa  =>    [ C D A B ] 
+red/red/aaa     =>     [ C D | 404 ] 
+aaa.ppt         =>     [ NONE | 404 ] 
+
+
+
+---------------------------------------------------------------
+
+
+
 	
 
 

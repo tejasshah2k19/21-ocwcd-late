@@ -95,6 +95,7 @@
 	<filter-mapping>
 		<filter-name>CalculateResultFilter</filter-name>
 		<url-pattern>/CalculateResultServlet</url-pattern>
+	<!-- <servlet-name>NameOfYourServlet</servlet-name> -->
 	</filter-mapping>
 
 	<filter>

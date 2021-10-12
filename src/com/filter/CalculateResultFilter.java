@@ -19,7 +19,7 @@ public class CalculateResultFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		System.out.println("calculate result filter doFilter");
-		// input ?
+		// input ? empty 
 		String maths = request.getParameter("maths");
 		String sci = request.getParameter("sci");
 		String eng = request.getParameter("eng");

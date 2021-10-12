@@ -105,6 +105,7 @@
 	<filter-mapping>
 		<filter-name>ResultFormatFilter</filter-name>
 		<url-pattern>/CalculateResultServlet</url-pattern>
+		
 	</filter-mapping>
 
 

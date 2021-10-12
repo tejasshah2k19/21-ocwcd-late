@@ -229,6 +229,12 @@ aaa.ppt         =>     [ NONE | 404 ]
 ---------------------------------------------------------------
 
 
+we need to create student portal for students to access information of
+ events,holidays,exams,and results.
+ student can access information without login. 
+ but admin has to login before managing events,exams..etc..
+admin -->login --> Home.jsp [ add events , add holidays , manage events ] 
+ 
 
 	
 

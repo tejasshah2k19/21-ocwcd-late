@@ -95,7 +95,7 @@
 	<filter-mapping>
 		<filter-name>CalculateResultFilter</filter-name>
 		<url-pattern>/CalculateResultServlet</url-pattern>
-	<!-- <servlet-name>NameOfYourServlet</servlet-name> -->
+		<!-- <servlet-name>NameOfYourServlet</servlet-name> -->
 	</filter-mapping>
 
 	<filter>
@@ -105,9 +105,38 @@
 	<filter-mapping>
 		<filter-name>ResultFormatFilter</filter-name>
 		<url-pattern>/CalculateResultServlet</url-pattern>
-		
+
 	</filter-mapping>
 
+	<servlet>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<servlet-class>com.controller.AdminLoginServlet</servlet-class>
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>admin@admin.com</param-value>
+		</init-param>
 
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>admin</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<url-pattern>/AdminLoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<context-param>
+		<param-name>globalEmail</param-name>
+		<param-value>admin@global.com</param-value>
+	</context-param>
+
+	<context-param>
+		 <param-name>globalPassword</param-name>
+		 <param-value>admin</param-value>
+	</context-param>
 
 </web-app>

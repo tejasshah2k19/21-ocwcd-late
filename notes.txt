@@ -235,6 +235,11 @@ we need to create student portal for students to access information of
  but admin has to login before managing events,exams..etc..
 admin -->login --> Home.jsp [ add events , add holidays , manage events ] 
  
+ we can have more than 1 admin in our site 
+ 1) local admin -->ServletConfig 
+ 2) global admin --->ServletContext
+ 
+ 
 
 	
 

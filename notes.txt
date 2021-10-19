@@ -239,9 +239,88 @@ admin -->login --> Home.jsp [ add events , add holidays , manage events ]
  1) local admin -->ServletConfig 
  2) global admin --->ServletContext
  
+-------------------------------------------------------------------------------------
+servletconfig ---> ServletConfig 
+	1) init(ServletConfig config) 
+	2) getServletConfig() 
+	
+
+servletcontext --> ServletContext
+	1) getServletContext() 
+-------------------------------------------------------------------------------------
+	
+	 
+amazon -->    dhiraj sir --> fold 3 ->  order F3  
+			  shyam sir  -->  iphone 12 ->  ip12 
+			  nisarg sir -->  realme gt neo 2 ->  rgtn2 
+			  
+election
+
+
+user --> card number ----->420           school --> book->card number -> 420 
+client side 							server side 
+										amazon server - dhiraj sir 1 , shyamsir 2 , nisarg sir 3 
+ds -> 1 										
+ss -> 2
+ns -> 3 
+
+token --> ns[3] ds[1] ss[2]          
+
+server --> ns - 3 , ds - 1 , ss -2 
+
+browser --> place order --> fold3 -> hidden --> token -> 1 
+server ---> check token ?  token ?  dhiraj sir --> order fold 3 
+
+browser --> view order -->  hidden --> token -> 1
+server ---> check token? token ? dhiraj sir--> orders --> view 
+
+http -> state less --> token 
+     --> state full --> continues --> connection --> 
+    	
+developer 
+-------------------------------------------------------------------------------------
+user info ===> 
+		privacy - security --> session 
+		cookies 
+		
+		credit card
+		
+		
+		1) session => server side => by server | server memory 
+			17 mb 
+			-> 1000 * 17 mb --> 17000 MB -> 1024 MB -> 1 gb -> 17 gb 
+			-> ram -> 4 | 8 | 16 
+			-> ram -> 1 gb 
+			credit  card 			
+		2) cookie  => client side =>           | browser 
+			
+-------------------------------------------------------------------------------------
+HttpSession => session 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
-	
+
+
+
+
+ 
+-------------------------------------------------------------------------------------
+		
 
 
 

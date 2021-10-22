@@ -297,8 +297,13 @@ user info ===>
 -------------------------------------------------------------------------------------
 HttpSession => session 
 
-
-
+		HttpSession session = request.getSession(); 
+		session.setAttribute("firstName",firstName); 
+		
+		500 users --> 500 session --> server's memory 
+		
+		logout? release? invalidate() --> destroy session instance from memory 
+	
 
 
 

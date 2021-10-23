@@ -16,7 +16,10 @@ public class InputSessionServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String firstName = request.getParameter("firstName");
 		String email = request.getParameter("email");
-
+         
+		
+		   
+		
 		// session -> server
 		HttpSession session = request.getSession(); // user's session
 		session.setAttribute("firstName", firstName); // set data in session

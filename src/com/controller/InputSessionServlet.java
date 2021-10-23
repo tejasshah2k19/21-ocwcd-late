@@ -19,13 +19,15 @@ public class InputSessionServlet extends HttpServlet {
 
 		// session -> server
 		HttpSession session = request.getSession(); // user's session
-		session.setAttribute("firstName", firstName); // set data in session 
+		session.setAttribute("firstName", firstName); // set data in session
 		session.setAttribute("email", email);
-		
-		//redirect 
-		//data :-> servlet --> jsp  [ RequestDispatcher ] //cary forward your existing request 
-		
-		
-		response.sendRedirect("SessionHome.jsp");//jump to SessionHome.jsp // new request 
+
+		// 5 min --> session destroy
+		session.setMaxInactiveInterval(60);// 1 minutes
+		// redirect
+		// data :-> servlet --> jsp [ RequestDispatcher ] //cary forward your existing
+		// request
+
+		response.sendRedirect("SessionHome.jsp");// jump to SessionHome.jsp // new request
 	}
 }

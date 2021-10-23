@@ -14,13 +14,13 @@ public class SessionLogoutServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		HttpSession session = request.getSession();
-		session.invalidate();
-		
-		//RequestDisptacher 
-		response.sendRedirect("SessionInput.jsp");//login
-		
+		session.invalidate();// release --- destroy session
+
+		// RequestDisptacher
+		response.sendRedirect("SessionInput.jsp");// login
+
 	}
 
 }

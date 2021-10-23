@@ -135,8 +135,26 @@
 	</context-param>
 
 	<context-param>
-		 <param-name>globalPassword</param-name>
-		 <param-value>admin</param-value>
+		<param-name>globalPassword</param-name>
+		<param-value>admin</param-value>
 	</context-param>
+
+	<session-config>
+		<session-timeout>3</session-timeout>
+	</session-config>
+
+	
+	<listener>
+		<listener-class>com.listener.SessionCounterListener</listener-class>
+	</listener>
+
+
+
+
+
+
+
+
+
 
 </web-app>

@@ -304,26 +304,28 @@ HttpSession => session
 		
 		logout? release? invalidate() --> destroy session instance from memory 
 	
+what if user does not click on logout? 
+in-active --> 5 minutes 
+session timeout 
 
+1) programmatically -- java  
+2) configuration  ---  xml 
 
+-------------------------------------------------------------------------------------
+listener 
 
+	server start --> google api --open 
+	server stop -->  api --close 
 
-
-
-
-
-
-
-
-
-
+	500 users => count ? 
+	session => listen --> session creation --> counter ++ 
+				session destroy --> counter -- 
  
+1) class --> logic [ SessionCounterListener  implements ????? ]
+2) override all the methods 
+3) configuration -> web.xml 
 
 
-
-
-
- 
 -------------------------------------------------------------------------------------
 		
 

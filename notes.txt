@@ -327,9 +327,39 @@ listener
 
 
 -------------------------------------------------------------------------------------
-		
+
+Login -> username and password -> store username in session so all the jsp page of 
+our app will display message to the user 
+	e.g    Good Morning , Ram 
+	
+username and password can be any , once user login , home page will display
+home page contains 3 products with their image,price,name 
+
+all products have addtocart link so user can add items on their cart. 
+
+home page also have two hyperlinks 
+1) view my cart 
+2) logout 
+
+view my cart hyperlink navigate user's to ViewMyCart Page , their you have to 
+display all the products from the cart that is added  in home page by user. 
+
+when user click on logout one servlet will call and release the memory of session.
+
+-------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+
+
+
+
+
+	
 
 
 

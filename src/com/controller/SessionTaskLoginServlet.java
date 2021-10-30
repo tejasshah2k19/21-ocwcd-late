@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +22,9 @@ public class SessionTaskLoginServlet extends HttpServlet {
 		HttpSession session = request.getSession(); // old ? new ? no new ?
 		session.setAttribute("userName", userName);
 
+		ArrayList<Integer>  products = new ArrayList<Integer>(); // blank list productId 
+		session.setAttribute("products", products);//1 2 3 
+		
 		response.sendRedirect("SessionTaskHome.jsp");
 	}
 }

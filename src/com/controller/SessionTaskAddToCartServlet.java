@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +20,11 @@ public class SessionTaskAddToCartServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		
-		session.setAttribute("productId", productId);// 
+		ArrayList<Integer> products = (ArrayList<Integer>) session.getAttribute("products");		
+		products.add(productId);
+		session.setAttribute("products", products);
+		
+//		session.setAttribute("productId", productId);// productId = 2,3,1  
 		
 		response.sendRedirect("SessionTaskHome.jsp");
 		

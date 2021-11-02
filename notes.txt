@@ -308,8 +308,9 @@ what if user does not click on logout?
 in-active --> 5 minutes 
 session timeout 
 
-1) programmatically -- java  
-2) configuration  ---  xml 
+1) programmatically[seconds]  -- java  session.setMaxInatctiveInterval(60*60*2);
+2) configuration [ minutes]   ---  xml   <session-config> <session-timeout>2</session-timeout></session-config> 
+
 
 -------------------------------------------------------------------------------------
 listener 
@@ -345,6 +346,24 @@ view my cart hyperlink navigate user's to ViewMyCart Page , their you have to
 display all the products from the cart that is added  in home page by user. 
 
 when user click on logout one servlet will call and release the memory of session.
+
+
+**addition**
+1) ArrayList for cart 
+
+2) Qty can be decrease from view cart page 
+3) print grand total of cart on view cart page 
+ 
+-------------------------------------------------------------------------------------
+storage ---> user info 
+
+1) session -- server side --> secure -> server memory --> privacy ->  
+2) cookie  -- client side --> open --> any one can accesss 
+
+
+add? 
+read?
+expired? 
 
 -------------------------------------------------------------------------------------
 

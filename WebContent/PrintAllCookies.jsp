@@ -1,16 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" session="false"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login</title>
 </head>
 <body>
-	<form action="SessionTaskLoginServlet" method="post">
-		Username: <input type="text" name="userName" /><br> Password: <input
-			type="password" name="password" /></br> <input type="submit"
-			value="Login">
-	</form>
+
+	<h2>All Cookies</h2>
+
+	<%
+		Cookie c[] = request.getCookies();
+	
+		for(Cookie x:c){
+			out.print(x.getName()+" ==> "+x.getValue()+"<br>");
+		}
+	%>
+	
+	
+
+
 </body>
 </html>

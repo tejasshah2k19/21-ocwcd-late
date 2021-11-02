@@ -17,16 +17,21 @@ public class SessionTaskAddToCartServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		int productId = Integer.parseInt(request.getParameter("productId"));
-		
+
 		HttpSession session = request.getSession();
-		
-		ArrayList<Integer> products = (ArrayList<Integer>) session.getAttribute("products");		
+
+		ArrayList<Integer> products = (ArrayList<Integer>) session.getAttribute("products");
+
+//		if (products == null) {
+//			// create
+//		}
+
 		products.add(productId);
 		session.setAttribute("products", products);
-		
+
 //		session.setAttribute("productId", productId);// productId = 2,3,1  
-		
+
 		response.sendRedirect("SessionTaskHome.jsp");
-		
+
 	}
 }

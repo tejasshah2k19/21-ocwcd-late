@@ -358,7 +358,7 @@ when user click on logout one servlet will call and release the memory of sessio
 storage ---> user info 
 
 1) session -- server side --> secure -> server memory --> privacy ->  
-2) cookie  -- client side --> open --> any one can accesss 
+2) cookie  -- client side --> open --> any one can access 
 
 
 add? 
@@ -366,8 +366,14 @@ read?
 expired? 
 
 -------------------------------------------------------------------------------------
+headers --> 
+			request -> 
+			response -> 
+			
+			client ---> request --> hidden --> [ fb.com , gmail.com ] js disable , zip , image , content gif png flv flash  
+			server --> response --> hidden --> 
 
-
+-------------------------------------------------------------------------------------
 
 
 

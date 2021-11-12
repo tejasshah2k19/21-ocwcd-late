@@ -374,13 +374,58 @@ headers -->
 			server --> response --> hidden --> 
 
 -------------------------------------------------------------------------------------
+<html>
+
+	<body>
+		<h1>Welcome</h1> 
+			custom-tag ---> user --> developer 
+
+			j2ee--> standard tag lib -> jstl  
+		<greet></greet> 
+		<a>
+		<time> </time> 
+	</body> 
+</html> 
+
+
+good morning , tejas 
+
+
+good evening , tejas 
+
+jstl --> stdlib.jar 
+
+	core tag -> if out import  choose catch forEach redirect  
+	xml tag ->  parse when choose otherwise out set transform param 
+	function tag -> 
+	formatting tag -> 
+	sql tag -> 
+	
+	
+	1) download jst.jar 
+	2) lib -> paste
+	3) link -> java build path 
+	4) import jsp using <%@taglib %>
 
 
 
 
+---------------------------------------------------------------------------
+
+JSP life cycle 
+
+a.jsp 
 
 
+1) translation a.jsp --> a.java 
+2) compilation a.java --> a.class 
+3) load class 
+4) create instance 
+5) init() -- jspInit()
+6) service() -- _jspService() 
+7) destroy() -- jspDestroy()
 
+-------------------------------------------------------------------
 
 
 

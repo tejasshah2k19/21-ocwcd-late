@@ -1,0 +1,15 @@
+<taglib>
+
+	<tlib-version>1</tlib-version>
+	<jsp-version>2</jsp-version>
+	<uri>myelfunction</uri>
+
+
+
+	<function>
+		<name>inrtousd</name>
+		<function-class>com.elfunction.UsdConv</function-class>
+		<function-signature>java.lang.Integer inrToUsd(java.lang.Integer)
+		</function-signature>
+	</function>
+</taglib>

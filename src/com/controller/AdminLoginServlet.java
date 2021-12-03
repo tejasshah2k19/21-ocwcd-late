@@ -12,12 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AdminLoginServlet extends HttpServlet {
 
-	String adminEmail  = "";
+	String adminEmail = "";
 	String adminPassword = "";
+
 	@Override
 	public void init(ServletConfig config) throws ServletException {
 
-		adminEmail  = config.getInitParameter("email");
+		adminEmail = config.getInitParameter("email");
 		adminPassword = config.getInitParameter("password");
 	}
 
@@ -26,15 +27,13 @@ public class AdminLoginServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		RequestDispatcher rd = null;
-	
-		ServletContext context = getServletContext();
-		
-		System.out.println("Global Email => "+context.getInitParameter("globalEmail"));
-		System.out.println("Global Password => "+context.getInitParameter("globalPassword"));
-		
-		
-		
-		System.out.println("admin email password"+adminEmail+" "+adminPassword);
+
+		ServletContext context = getServletContext();// application
+
+		System.out.println("Global Email => " + context.getInitParameter("globalEmail"));
+		System.out.println("Global Password => " + context.getInitParameter("globalPassword"));
+
+		System.out.println("admin email password" + adminEmail + " " + adminPassword);
 		if (email.equals(adminEmail) && password.equals(adminPassword)) {
 
 			rd = request.getRequestDispatcher("AdminDashboard.jsp");

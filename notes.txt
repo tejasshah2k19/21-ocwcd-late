@@ -157,7 +157,7 @@ filter -->
 request ---->   filter | server [ pre process ] 
 
 
-Singup.jps --> firstname email* password* -> submit --> request --> server  | process -> validation -> input
+Singup.jsp--> firstname email* password* -> submit --> request --> server  | process -> validation -> input
 
 100 users --> 50 user data miss ---> 50  
 
@@ -364,6 +364,11 @@ storage ---> user info
 add? 
 read?
 expired? 
+	<session-config>
+			<session-timeout>
+			
+			</
+	</
 
 -------------------------------------------------------------------------------------
 headers --> 
@@ -428,14 +433,23 @@ a.jsp
 -------------------------------------------------------------------
 
 
-
-	
-
-
-
-
+Scope :-	page		-> this 
+			request  	-> HttpServletRequest
+			session     -> HttpSession 
+			application -> ServletContext 
 
 
+
+-------------------------------------------------------------------
+EL function :-
+		1) el function class--logic  	
+		2) tld -> elfunc.tld [tag lib. descriptor ] 
+		3) web.xml [ tld ]  
+		4) jsp -- use 
+
+usdconv(1200) 
+usdconv(1600) 
+-------------------------------------------------------------------
 
 
 

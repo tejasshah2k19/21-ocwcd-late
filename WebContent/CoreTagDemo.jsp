@@ -29,6 +29,8 @@
 	<br>
 
 	<c:set var="a" value="3"></c:set>
+	
+	
 	<c:out value="${a}"></c:out>
 
 	<c:if test="${a%2==0}">
@@ -43,19 +45,19 @@
 	<c:choose>
 
 		<c:when test="${a  == 1 }">
-			1
+			case 1
 		</c:when>
 
 		<c:when test="${a  == 2 }">
-		2
+		case 2
 		</c:when>
 
 		<c:when test="${a  == 3 }">
-		3
+		case 3
 		</c:when>
 
 		<c:when test="${a  == 4 }">
-		4
+		case 4
 		</c:when>
 
 		<c:otherwise>
@@ -63,22 +65,6 @@
 		</c:otherwise>
 
 	</c:choose>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

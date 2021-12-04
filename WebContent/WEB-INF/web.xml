@@ -99,9 +99,9 @@
 	<session-config>
 		<session-timeout>3</session-timeout>
 	</session-config>
-	<listener>
+	<!-- <listener>
 		<listener-class>com.listener.SessionCounterListener</listener-class>
-	</listener>
+	</listener> -->
 	<servlet>
 		<description></description>
 		<display-name>AddCookieServlet</display-name>

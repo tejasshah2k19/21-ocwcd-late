@@ -450,6 +450,45 @@ EL function :-
 usdconv(1200) 
 usdconv(1600) 
 -------------------------------------------------------------------
+reusable web component :-	
+						inclusion
+								file -> file add 
+						1) static inclusion
+								<%@ include file="Footer.jsp" %>	
+						2) dynamic inclusion 	
+								<jsp:include page="Header.jsp"></jsp:include>
+						
+						
+						
+						header.jsp ->5 line->
+						footer.jsp ->5 line-> 
+						home.jsp ->5 line -> [ header footer ] 
+						
+						
+						header.jsp 
+							home content 
+						footer.jsp 
+						
+-------------------------------------------------------------------
+
+load class 
+create instance 
+init() 
+service()*
+destroy()
+
+
+translation  [.jsp --> .java ] 
+compilation  [.java --> .class ]
+load class 
+create instance 
+init()  -- jspInit()
+service()* -- _jspService()
+destroy() -- jspDestroy() 
+
+
+-------------------------------------------------------------------
+url rewriting -- 
 
 
 
@@ -461,8 +500,7 @@ usdconv(1600)
 
 
 
-
-
+-------------------------------------------------------------------
 
 
 

@@ -38,7 +38,9 @@
 				<td><%=email%></td>
 				<td><%=password%></td>
 				<td><a href="DeleteStudentServlet?studentId=<%=studentId%>">Delete</a> | 
-					<a href="ViewStudentServlet?studentId=<%=studentId%>">View</a>
+					<a href="ViewStudentServlet?studentId=<%=studentId%>">View</a> |
+					<a href="EditStudentServlet?studentId=<%=studentId%>">Edit</a> |
+					
 				</td>
 			</tr>
 			<%

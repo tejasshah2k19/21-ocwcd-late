@@ -502,10 +502,26 @@ url rewriting --
 
 -------------------------------------------------------------------
 
+usebean 
 
+-------------------------------------------------------------------
 
+custom tag:- jsp-api.jar 
 
+1) SimpleTag -> interface --> SimpleTag -> SimpleTagSupport  
+2) classicTag -> interface --> Tag  --> TagSupport -->
+					Body
+					Iter
+					
 
+simple tag :-	
+			1) tag handler class->Logic 
+			2) .tld -> tag library descriptor -> tag name ->class*
+			3) map .tld -> web.xml 
+			4) jsp use -> <%@taglib %> -> import  
+
+<greet></greet> 
+-------------------------------------------------------------------
 
 
 

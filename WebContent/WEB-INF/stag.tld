@@ -1,0 +1,15 @@
+<taglib>
+
+	<tlib-version>1</tlib-version>
+	<jsp-version>2</jsp-version>
+	<uri>http://www.royal.com/emp/tejas/stag</uri>
+
+
+	<tag>
+		<name>greet</name>
+		<tag-class>com.stag.GreetTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>
+
+ 

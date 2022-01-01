@@ -9,6 +9,15 @@
 </head>
 <body>
 
-	<t:greet></t:greet>
+	<t:greet></t:greet><br><br>
+
+	<t:sum n2="20" n1="30" /><br>
+	<t:sum n2="200" n1="30" /><br>
+	
+	
+	
+	
+	
+	
 </body>
 </html>

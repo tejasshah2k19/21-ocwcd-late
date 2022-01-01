@@ -10,6 +10,24 @@
 		<tag-class>com.stag.GreetTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
+
+	<tag>
+		<name>sum</name>
+		<tag-class>com.stag.SumTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>n1</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		
+		<attribute>
+			<name>n2</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
 </taglib>
 
  

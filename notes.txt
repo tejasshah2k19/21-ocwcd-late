@@ -528,6 +528,17 @@ simple tag :-
 -------------------------------------------------------------------
 
 
+classic 
+
+<curr></curr>     SKIP_BODY 
+
+<print>Royal</print>  print body --> EVAL_BODY_INCLUDE 
+
+
+<loop count="3">Royal</loop> 
+
+
+
 
 
 

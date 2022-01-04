@@ -121,6 +121,13 @@
 			<taglib-location>/WEB-INF/stag.tld</taglib-location>
 		</taglib>
 
+
+		<taglib>
+			<taglib-uri>http://www.royal.com/emp/tejas/ctag</taglib-uri>
+			<taglib-location>/WEB-INF/ctag.tld</taglib-location>
+		</taglib>
+
+
 	</jsp-config>
 	<servlet>
 		<description></description>

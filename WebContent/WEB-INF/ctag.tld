@@ -1,0 +1,34 @@
+<taglib>
+
+	<tlib-version>1</tlib-version>
+	<jsp-version>2</jsp-version>
+	<uri>http://www.royal.com/emp/tejas/ctag</uri>
+
+
+	<tag>
+		<name>curr</name>
+		<tag-class>com.ctag.CurrTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+
+	<tag>
+		<name>print</name>
+		<tag-class>com.ctag.PrintTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+
+	<tag>
+		<name>loop</name>
+		<tag-class>com.ctag.LoopTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>count</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+</taglib>
+
+ 
